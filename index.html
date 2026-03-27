@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" type="image/png" href="Logo.png">
+  <title>Noor Travels & Manpower Service</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header" id="top">
+  <div class="nav-shell">
+
+    <a class="brand" href="#top">
+      <img src="noor-travels-logo.svg" alt="Logo">
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      ☰
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+
+      <!-- ✅ CERTIFICATE BUTTON (IMPORTANT) -->
+      <a href="javascript:void(0)" onclick="toggleCertificate()">
+        Certificate
+      </a>
+
+      <a class="nav-cta" href="https://wa.me/919688879994" target="_blank">
+        WhatsApp
+      </a>
+
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Travel & Visa Support Service</h1>
+</section>
+
+<!-- CERTIFICATE SECTION -->
+<section id="certificate" style="display:none;">
+  <h2>Our Certificate</h2>
+
+  <div class="certificate-grid">
+    <img src="Certificate_page-0001.jpg" alt="">
+    <img src="Certificate_page-0002.jpg" alt="">
+    <img src="Certificate_page-0003.jpg" alt="">
+    <img src="Certificate_page-0004.jpg" alt="">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations">
+  <h2>Destinations</h2>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <h2>Process</h2>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Noor Travels</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
