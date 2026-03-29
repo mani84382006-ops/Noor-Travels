@@ -778,3 +778,29 @@ select {
     transform: none;
   }
 }
+
+
+/* ✅ FIX: Certificate Images Proper Layout */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.certificate-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+
+.brand-logo {
+  display: block;
+  width: clamp(180px, 22vw, 250px);
+  height: clamp(180px, 22vw, 250px); /* same height & width */
+  border-radius: 50%; /* 🔥 makes it round */
+  object-fit: cover; /* image stretch ஆகாமல் fix */
+}
