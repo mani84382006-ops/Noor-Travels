@@ -128,7 +128,10 @@ select {
 .brand-logo {
   display: block;
   width: clamp(180px, 22vw, 250px);
-  height: auto;
+  height: clamp(180px, 22vw, 250px);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1,
@@ -797,14 +800,4 @@ select {
 
 
 
-.brand-logo {
-  display: block;
-  width: clamp(180px, 22vw, 250px);
-  height: clamp(180px, 22vw, 250px); /* same height & width */
-  border-radius: 50%; /* 🔥 makes it round */
-  object-fit: cover; 
-}
 
-.brand-logo {
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
