@@ -200,8 +200,8 @@ if ("IntersectionObserver" in window && revealItems.length) {
         });
  
         setTimeout(() => {
-          window.open("https://search.google.com/local/writereview?placeid=XXXX", "_blank");
-        }, 1500);
+  window.location.href = "YOUR-REAL-LINK";
+}, 1500);
  
       } else {
         /* ── Negative path: 1, 2, or 3 stars ── */
