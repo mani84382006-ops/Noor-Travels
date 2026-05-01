@@ -200,7 +200,7 @@ if ("IntersectionObserver" in window && revealItems.length) {
         });
  
         setTimeout(() => {
-          window.open("https://g.page/r/YOUR-LINK/review", "_blank", "noopener");
+          window.open("https://search.google.com/local/writereview?placeid=XXXX", "_blank");
         }, 1500);
  
       } else {
