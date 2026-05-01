@@ -802,4 +802,35 @@ select {
   object-fit: cover;
 }
 
+.review-cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: #0f172a;
+  color: white;
+}
 
+.review-cta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.review-cta p {
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+.stars a {
+  font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.review-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
