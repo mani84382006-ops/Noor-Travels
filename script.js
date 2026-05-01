@@ -85,3 +85,31 @@ if ("IntersectionObserver" in window && revealItems.length) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+
+<script>
+const stars = document.querySelectorAll(".star-rating span");
+const msg = document.getElementById("rating-msg");
+
+stars.forEach((star, index) => {
+  star.addEventListener("click", () => {
+    let rating = index + 1;
+
+    stars.forEach((s, i) => {
+      s.classList.toggle("active", i < rating);
+    });
+
+    if (rating >= 4) {
+      msg.innerText = "Thank you! Please leave a review on Google 🙏";
+      
+      setTimeout(() => {
+        window.open("https://g.page/r/YOUR-LINK/review", "_blank");
+      }, 1500);
+
+    } else {
+      msg.innerText = "Thanks! Please tell us how we can improve.";
+      // 👉 here you can store feedback (future upgrade)
+    }
+  });
+});
+</script>
