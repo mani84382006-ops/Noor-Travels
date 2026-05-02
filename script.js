@@ -200,12 +200,17 @@ if ("IntersectionObserver" in window && revealItems.length) {
         });
  
         setTimeout(() => {
-  window.open(
-    "https://search.google.com/local/writereview?placeid=YOUR_REAL_PLACE_ID",
-    "_blank"
-  );
+ window.open(
+  "https://search.google.com/local/writereview?placeid=ChIJaxyfQNMHqTsRT-iT7iIs5o8Q",
+  "_blank"
+);
+
 }, 1500);
- 
+
+
+
+         
+         
       } else {
         /* ── Negative path: 1, 2, or 3 stars ── */
         feedbackPos.style.display = "none";
