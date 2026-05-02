@@ -200,9 +200,7 @@ if ("IntersectionObserver" in window && revealItems.length) {
         });
  
         setTimeout(() => {
- window.open(
-  "https://search.google.com/local/writereview?placeid=ChIJaxyfQNMHqTsRT-iT7iIs5o8Q",
-  "_blank"
+ window.open("https://maps.app.goo.gl/Kh6GHohX35CmXpYx5", "_blank");
 );
 
 }, 1500);
